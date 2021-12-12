@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+      <remote name="b1c1"
+          fetch="https://github.com/bluecrossdev" />
+
+      <remote name="rootgh"
+          fetch="https://github.com" />
+          
+  <project path="device/google/crosshatch" name="device_google_crosshatch" remote="xenxynon" b1c1="12.x" />
+  <project path="device/google/crosshatch-sepolicy" name="device_google_crosshatch-sepolicy" remote="b1c1" revision="twelve" />
+  <project path="vendor/gpx" name="vendor_google" remote="b1c1" revision="twelve" />
+  <project path="kernel/google/bluecross" name="HotDogfinba11/kernel_google_msm-4.9" remote="rootgh" revision="twelve" />
+  <remove-project name="platform_device_aosp_sepolicy" />
+  <project path="device/aosp/sepolicy" name="herobuxx/device_custom_sepolicy" remote="rootgh" revision="twelve" />
+  <project path="packages/apps/ElmyraService" name="protonaosp/android_packages_apps_ElmyraService" remote="rootgh" revision="sc" />
+  
+</manifest>
