@@ -15,4 +15,32 @@
   <project path="device/aosp/sepolicy" name="herobuxx/device_custom_sepolicy" remote="rootgh" revision="twelve" />
   <project path="packages/apps/ElmyraService" name="protonaosp/android_packages_apps_ElmyraService" remote="rootgh" revision="sc" />
   
+  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="hardware_qcom_data_ipacfg-mgr" remote="halcyon"/>
+
+  <remove-project name="platform/hardware/qcom/display" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="halcyon"/>
+
+  <remove-project name="platform/hardware/qcom/gps" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="halcyon"/>
+
+  <remove-project name="platform/hardware/qcom/keymaster" />
+  <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="halcyon"/>
+
+  <remove-project name="platform/hardware/qcom/media" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="halcyon"/>
+
+  <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
+  <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="hardware_qcom_sdm845_data_ipacfg-mgr" remote="halcyon" >
+    <linkfile src="os_pickup.bp" dest="hardware/qcom/sdm845/Android.bp" />
+  </project>
+
+  <remove-project name="platform/hardware/qcom/sdm845/display" />
+  <project path="hardware/qcom/sdm845/display" name="hardware_qcom_sdm845_display" remote="halcyon"/>
+
+  <remove-project name="platform/hardware/qcom/sdm845/media" />
+  <project path="hardware/qcom/sdm845/media" name="hardware_qcom_sdm845_media" remote="halcyon"/>
+
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="halcyon"/>
 </manifest>
